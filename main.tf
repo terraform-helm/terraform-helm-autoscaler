@@ -21,7 +21,7 @@ module "main_image" {
 }
 
 module "helm" {
-  source               = "github.com/terraform-helm/terraform-helm?ref=main"
+  source               = "github.com/terraform-helm/terraform-helm?ref=v0.2"
   helm_config          = local.helm_config
   set_values           = local.set_values
   set_sensitive_values = var.set_sensitive_values
